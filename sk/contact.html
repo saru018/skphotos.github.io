@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-r navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Suraj Kshirsagar Photography</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Browse by Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Candid Photoshoot</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Maternity Photoshoot</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Weeding Photography</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Birthday Photoshoot</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- --------------contact us section --------------------- -->
+  <div class="conm">
+    <form
+      action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScHYWYXCkjUefc76kyVan1pBkWSmtJhKS0CMWLGA_4p3h1xBg/formResponse"
+      method="post">
+      <div class="msg">
+        <p>Start Filling Form</p>
+      </div>
+      <p id="suc">Enter Your Email Address</p>
+
+      <input type="email" name="entry.473627861" id="">
+
+      <p>Enter your Name</p>
+      <input type="text" name="entry.1645616993" id="">
+      <p>Enter your Mobile Number</p>
+      <input type="text" name="entry.1899687021" id="">
+      <p>Enter your Living City</p>
+      <input type="text" name="entry.2024172700" id="">
+      <br>
+      <br>
+      <button type="submit" class="submit" onclick="success()">Submit</button>
+      <br>
+    </form>
+    <script>
+      function success() {
+        document.getElementById("suc").innerHTML = "Form Submitted Successfully";
+      }
+    </script>
+  </div>
+  <style>
+    .submit {
+      border: 2px solid black;
+      padding: 10px 10px 10px 10px;
+      width: 100px;
+      border-radius: 15px;
+
+    }
+
+    .submit:hover {
+      background-color: rgb(27, 248, 27);
+      color: black;
+    }
+
+    p {
+      margin-top: 20px;
+    }
+
+    .conm {
+      width: 80vw;
+      height: fit-content;
+      margin-left: 10vw;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      /* background: black; */
+    }
+
+    input {
+      border: none;
+      border-bottom: 2px solid rgb(10, 10, 10);
+    }
+  </style>
+
+  <!-- ------------------------footer section---------------- -->
+
+
+  <style>
+    .foot1 {
+      width: 100%;
+      height: fit-content;
+      background-color: black;
+
+    }
+
+    .ftext {
+      color: white;
+      text-align: center;
+
+    }
+
+    .gmap {
+      border: 2px thick white;
+      align-content: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .socialicon {
+      display: inline-block;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 10px 10px 10px 10px;
+      padding: 10px 10px 10px 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .iconso {
+      margin: 10px 10px 10px 10px;
+      cursor: pointer;
+
+
+    }
+
+    .socont {
+      color: white;
+      text-align: center;
+    }
+  </style>
+
+  <!-- footer goes here  -->
+
+  <br>
+  <div class="foot1">
+    <!-- <div class="gmap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120637.94618646067!2d74.67263223831408!3d19.110471365263706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdcb05d46788921%3A0x6677e92c1a5181b6!2sAhmednagar%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1630124278227!5m2!1sen!2sin" width="400px" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+           </div> -->
+    <h5 class="socont">Follow us on our Social Media Accounts
+      <br>
+      <br>
+      Stay Connected With Us
+    </h5>
+    <div class="socialicon">
+      <img class="iconso" src="facebook.png" alt="" srcset="" width="50px">
+      <img class="iconso" src="youtube.png" alt="" srcset="" width="50px">
+      <img class="iconso" src="instagram.png" alt="" srcset="" width="50px">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <style>
+      .items1 {
+        /* position: relative; */
+        width: fit-content;
+        /* display:inline-block; */
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 80vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+
+        color: white;
+        list-style: none;
+
+        cursor: pointer;
+        margin-top: 20px;
+        /* border-bottom:2px solid white; */
+        box-sizing: border-box;
+        /* margin-left:36%; */
+
+      }
+
+      .quicklinks {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+
+    <body>
+      <div class="quicklinks">
+        <ul>
+          <a class="items1" href="about.html">About Us</a>
+          <a class="items1" href="contact.html">Contact Us</a>
+          <a class="items1" href="gallery.html">Gallery</a>
+
+          <a class="items1">Back To Top</a>
+        </ul>
+      </div>
+
+      <h5 class="ftext">:) Designed and Maintained by SK Solutions :)</h5>
+
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+
+    document.body.addEventListener('touchmove', function (e) { e.preventDefault(); });</script>
+
+</html>
